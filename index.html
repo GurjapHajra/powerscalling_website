@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>power scaling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>POWER LEVEL COMPARISON</header>
+
+    <div id="discription">
+        This website shows a power level comparison between anime characters on a logarithmic scale where each tick value is double the previous tick—E.g. Tick 1=1, Tick 2=2, Tick 3=4, Tick 4=8, and so on. Below I have provided a few presets as demos, but you can create your own comparisons between as many characters as you wish. You can also use to link at the bottom of the website to convert exponents to numbers.
+    </div>
+
+    <div class="scroll" id = "scroll">
+        <div id="center_line"></div>
+    </div>
+
+    <div id="presets">
+        <h2>Presets: </h2>
+        <button id = "main3">Naruto vs Goku vs Saitama</button>
+        <button id = "dbz">Dragon Ball</button>
+    </div>
+    <div style="margin: 10px; text-align: center;">
+        <h2>Create Your Own List:</h2>
+        <h4>Number Of The Characters: </h4><input id="chars_num" type="number" value="0" min = "0">
+    </div>
+
+    <div id="table_div">
+        <table id="in-table">
+            <tr>
+                <th>NAME</th>
+                <th>POWER LEVEL</th>
+                <th>PHOTO LINK</th>
+            </tr>
+        </table>
+    </div>
+    
+    <button id = "generator">generate</button>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div id="legend">
+        <div class="ticklegend"></div>
+        <h4>&nbsp; =&nbsp;Country level</h4>&nbsp;&nbsp;
+        <div class="ticklegend" style="background-color: cyan;"></div>
+        <h4>&nbsp; =&nbsp;Planet level</h4>&nbsp;&nbsp;
+        <div class="ticklegend" style="background-color: lightgreen;"></div>
+        <h4>&nbsp;=&nbsp;Galaxy level</h4>&nbsp;&nbsp;
+        <div class="ticklegend" style="background-color: magenta;"></div>
+        <h4>&nbsp;=&nbsp;Universe level</h4>
+    </div>
+
+    <div id="end">
+        <a target=”_blank” href = "https://www.calculatorsoup.com/calculators/math/scientific-notation-converter.php">Convert exponent to number</a>
+        <h4> &#9400;  gurjap the goat</h4>
+    </div>
+    
+
+</footer>
+</html>
